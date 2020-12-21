@@ -1,0 +1,9 @@
+__pycache__
+.idea
+.vscode
+images/
+weights/
+*.py
+!challenge_reconstruction.py
+!densenet.py
+!subpixel.py
