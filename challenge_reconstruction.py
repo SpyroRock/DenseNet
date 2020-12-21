@@ -68,8 +68,8 @@ growth_rate = 12
 nb_filter = -1
 dropout_rate = 0.0 # 0.0 for data augmentation
 
-#model = densenet.DenseNetFCN(input_shape=img_dim, depth=depth, include_top=True, nb_dense_block=nb_dense_block, classes=1, nb_filter=-1, 
-                             growth_rate=16, dropout_rate=dropout_rate)
+# model = densenet.DenseNetFCN(input_shape=img_dim, depth=depth, include_top=True, nb_dense_block=nb_dense_block, classes=1, nb_filter=-1, 
+#                             growth_rate=16, dropout_rate=dropout_rate)
 
 model = densenet.DenseNetFCN(input_shape=img_dim)
 
