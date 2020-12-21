@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 import os.path
 
-import densenetrec
+import densenet
 import numpy as np
 import sklearn.metrics as metrics
 
@@ -68,10 +68,10 @@ growth_rate = 12
 nb_filter = -1
 dropout_rate = 0.0 # 0.0 for data augmentation
 
-model = densenetrec.DenseNet(input_shape=img_dim, depth=depth, include_top=True, nb_dense_block=nb_dense_block, classes=1, nb_filter=-1, 
+#model = densenet.DenseNetFCN(input_shape=img_dim, depth=depth, include_top=True, nb_dense_block=nb_dense_block, classes=1, nb_filter=-1, 
                              growth_rate=16, dropout_rate=dropout_rate)
 
-#model = densenetrec.DenseNetFCN(input_shape=img_dim)
+model = densenet.DenseNetFCN(input_shape=img_dim)
 
 print("Model created")
 
